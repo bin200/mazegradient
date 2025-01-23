@@ -4,7 +4,7 @@
  Visualizes distance from the start to any point in a binary maze using a gradient.
 The start is bright yellow, and then the gradient moves from purple-blue-green-yellow as the distance from the start point increases. The walls are dark purple.
 
-![Example of output gradient maze](example_images/gradient_rect.JPG)
+![Example of output gradient maze](example_images/gradient_rect.png)
 
 # Set up
  You can run maze.py like any other python file, such as through the command line.
@@ -13,7 +13,7 @@ The start is bright yellow, and then the gradient moves from purple-blue-green-y
  ## maze.png: 
  Create or move a black (walls) & white (path) pixel maze to the same location as maze.py and name it maze.png.
  If parts of the maze are unreachable, they won't show up on the output.
- ![Example of maze input](example_images/original_rect.JPG)
+ ![Example of maze input](example_images/original_rect.png)
 
  ## config.txt:
  Copy defaultconfig.txt and rename it to config.txt. Then set the following configuration up.
