@@ -13,6 +13,7 @@ The start is bright yellow, and then the gradient moves from purple-blue-green-y
  ## maze.png: 
  Create or move a black (walls) & white (path) pixel maze to the same location as maze.py and name it maze.png.
  If parts of the maze are unreachable, they won't show up on the output.
+
  ![Example of maze input](example_images/original_rect.png)
 
  ## config.txt:
