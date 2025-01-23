@@ -1,0 +1,5 @@
+[your-config]
+gradient_range = 64
+start_y = 0
+start_x = 0
+mode = binary
