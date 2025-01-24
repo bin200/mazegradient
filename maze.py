@@ -79,4 +79,5 @@ output_matrix[start_y][start_x] = current_moves
 
 if (mode == "gradient"):
 	plt.imshow(output_matrix, interpolation='nearest')
+plt.savefig('output.png', dpi=250, bbox_inches='tight')
 plt.show()
