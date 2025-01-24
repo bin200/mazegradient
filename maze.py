@@ -22,6 +22,11 @@ binary_matrix = np.array(img)
 binary_matrix = ~binary_matrix # invert B&W
 binary_matrix [binary_matrix > 0] = 1
 
+if (mode == "binary"):
+	binary_matrix = ~binary_matrix # invert B&W again for colour consistency
+	plt.imshow(binary_matrix, interpolation='nearest')
+	binary_matrix = ~binary_matrix
+
 #  Create output matrix
 matrix_height = len(binary_matrix)
 matrix_width = len(binary_matrix[0])
@@ -69,10 +74,9 @@ for tile in tiles_todo:
 # Set the start point to the maximum moves colour for visibility
 output_matrix[start_y][start_x] = current_moves
 
-binary_matrix = ~binary_matrix # invert B&W again for colour consistency
 
-if (mode == "binary"):
-	plt.imshow(binary_matrix, interpolation='nearest')
+
+
 if (mode == "gradient"):
 	plt.imshow(output_matrix, interpolation='nearest')
 plt.show()
